@@ -87,9 +87,9 @@ body {
     height: 250px; /* Adjust size as needed */
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     background: transparent;
-    border: 5px solid rgba(255, 255, 255, 0.5); /* Lightly translucent border */
+    border: 5px solid rgba(255, 255, 255, 0.5);
 }
 
 .profile-img {
