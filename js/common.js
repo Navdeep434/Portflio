@@ -18,3 +18,6 @@ function setActiveNavLink() {
 
 // Call the function when the page loads
 window.addEventListener('load', setActiveNavLink);
+
+
+
