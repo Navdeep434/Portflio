@@ -37,7 +37,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="text-center text-white py-5" style="background: linear-gradient(135deg, #2c3e50, #3498db);">
+    <section id="hero" class="text-center text-white py-5">
         <div class="container">
             <h1 class="display-4">Welcome to My Profile</h1>
             <p class="lead">Explore my work and learn more about my experience and skills.</p>
@@ -48,14 +48,20 @@
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>About Me</h2>
-                    <p>With extensive experience in PHP and Laravel, I specialize in developing robust and scalable web applications. My expertise spans across front-end and back-end technologies, and I am committed to delivering quality solutions tailored to client needs.</p>
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
+            <div class="row text-container">
+                <div class="col-md-8">
+                    <div class="text-container">
+                        <h2>About Me</h2>
+                        <p>With extensive experience in PHP and Laravel, I specialize in developing robust and scalable web applications. My expertise spans across front-end and back-end technologies, and I am committed to delivering quality solutions tailored to client needs.</p>
+                        <a href="about.html" class="btn btn-primary">Learn More</a>
+                        <div class="resume-actions mt-3">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#resumeModal">View Full Resume</button>
+                            <a href="assets/navdeep_raushan.pdf" download="Navdeep_Raushan_Resume.pdf" class="btn btn-primary">Download Resume</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="profile-img-container">
+                <div class="col-md-4">
+                    <div class="profile-img-container text-elevated">
                         <img src="assets/Profile2.jpg" alt="Profile Picture" class="profile-img img-fluid">
                     </div>
                 </div>
@@ -63,28 +69,14 @@
         </div>
     </section>
 
-    <!-- Resume Preview Section -->
-    <section id="resume-preview" class="py-5">
-        <div class="container text-center">
-            <h2>Resume</h2>
-            <div class="resume-preview">
-                <div class="resume-preview-embed">
-                    <embed src="assets/navdeep_raushan.pdf#zoom=80" type="application/pdf" class="w-100" style="height: 500px;">
-                </div>
-                <div class="resume-actions mt-3">
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#resumeModal">View Full Resume</button>
-                    <a href="assets/navdeep_raushan.pdf" download="Navdeep_Raushan_Resume.pdf" class="btn btn-primary">Download Resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <p class="text-center">Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
-            <div class="text-center">
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <div class="text-container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
                 <a href="contact.html" class="btn btn-primary">Get in Touch</a>
             </div>
         </div>
@@ -101,11 +93,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <embed src="assets/navdeep_raushan.pdf" type="application/pdf" width="100%" height="100%" />
+                    <embed src="assets/navdeep_raushan.pdf" type="application/pdf" />
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- Footer -->
     <footer class="footer py-4 bg-dark text-white">

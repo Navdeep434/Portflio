@@ -1,12 +1,14 @@
-/* Common styles for the whole site */
+/* Apply gradient background to the entire page */
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f7f6;
-    margin: 0;
-    padding: 0;
-}/* Navigation Bar */
+    background: linear-gradient(180deg, #8e2de2, #d1c4e9);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Navigation Bar */
 .navbar {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, #2c3e50, #3498db); /* Gradient background */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 1rem;
@@ -22,16 +24,19 @@ body {
 .navbar-nav .nav-link {
     color: #ffffff !important;
     font-size: 1.1rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    position: relative; /* Required for pseudo-element positioning */
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Darker shadow for stronger elevation effect */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #b3e0ff !important;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    color: #ffffff !important; /* White text for better readability */
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Dark shadow for floating effect */
+    transform: translateY(-8px); /* More pronounced float effect */
 }
 
+
+/* Navbar Toggler */
 .navbar-toggler {
     border: none;
     background: transparent;
@@ -41,19 +46,18 @@ body {
     background-image: url('data:image/svg+xml;charset=utf8,<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="%23ffffff"/></svg>');
 }
 
-
-
 .navbar-toggler:hover {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
+/* Navbar Link Underline Effect */
 .navbar-nav .nav-link::after {
     content: '';
     display: block;
     height: 2px;
-    background: #b3e0ff;
+    background: #b3e0ff; /* Light blue underline */
     transition: transform 0.3s ease;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -63,7 +67,6 @@ body {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
 
 /* Footer */
 .footer {
@@ -92,5 +95,3 @@ iframe {
     height: 100vh; /* Full viewport height */
     border: none;
 }
-
-
