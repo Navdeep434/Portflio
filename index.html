@@ -3,51 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home - Navdeep Raushan</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet"> <!-- Page-specific CSS -->
 </head>
 <body>
 
-<div class="container-fluid m-0 p-0">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="#">Navdeep Raushan</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Navdeep Raushan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <li class="nav-item">
+                <a class="nav-link" href="Projects.html">Projects</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
     </div>
-    </nav>
+</nav>
 
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="embed-responsive embed-responsive-16by9 ">
-                <iframe class="embed-responsive-item" src="assets/navdeep_raushan.pdf" allowfullscreen></iframe>
+<!-- Hero Section -->
+<section id="hero" class="text-center text-white py-5" style="background: linear-gradient(135deg, #2c3e50, #3498db);">
+    <div class="container">
+        <h1 class="display-4">Welcome to My Profile</h1>
+        <p class="lead">Explore my work and learn more about my experience and skills.</p>
+        <a href="Profile.html" class="btn btn-light btn-lg">View My Work</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>With extensive experience in PHP and Laravel, I specialize in developing robust and scalable web applications. My expertise spans across front-end and back-end technologies, and I am committed to delivering quality solutions tailored to client needs.</p>
+                <a href="about.html" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-img-container">
+                    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Preview Section -->
+<section id="resume-preview" class="py-5">
+    <div class="container text-center">
+        <h2>Resume</h2>
+        <div class="resume-preview">
+            <div class="resume-preview-embed">
+                <embed src="assets/navdeep_raushan.pdf#zoom=80" type="application/pdf">
+            </div>
+            <div class="resume-actions">
+                <button class="btn btn-view-resume" data-toggle="modal" data-target="#resumeModal">View Full Resume</button>
+                <a href="assets/navdeep_raushan.pdf" download="Navdeep_Raushan_Resume.pdf" class="btn btn-download-resume">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center">Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+        <div class="text-center">
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Modal -->
+<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resumeModalLabel">Resume</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <embed src="assets/navdeep_raushan.pdf" type="application/pdf" width="100%" height="100%" />
             </div>
         </div>
     </div>
 </div>
-    <!-- Footer -->
-    <footer class="bg-light sticky-bottom py-1">
-        <div class="container text-center ">
-            <p class="mb-0">&copy; 2024 Navdeep Raushan. All Rights Reserved.</p>
-        </div>
-    </footer>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Navdeep Raushan. All Rights Reserved.</p>
+    </div>
+</footer>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

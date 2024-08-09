@@ -1,0 +1,80 @@
+/* Contact Page Specific Styles */
+body {
+    background: #f4f7f6; /* Elegant background color */
+}
+
+/* .hero {
+    background: url('assets/contact-hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    z-index: 1;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */
+.contact-section {
+    padding: 3rem 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.contact-section form .form-control {
+    border-radius: 0.25rem;
+}
+
+.contact-section form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,89 @@
+/* Common styles for the whole site */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(135deg, #2c3e50, #3498db); /* Gradient Background */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* White text for brand */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White text for nav links */
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b3e0ff !important; /* Light blue color on hover */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="%23ffffff"/></svg>');
+}
+
+.navbar-toggler:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #b3e0ff;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* PDF Embed Section */
+.embed-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    border: none;
+}
