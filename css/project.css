@@ -10,13 +10,11 @@
 }
 
 .card-body {
-    background-color: #ffffff;
     padding: 1.5rem;
     transition: background-color 0.3s ease-in-out;
 }
 
 .card-body:hover {
-    background-color: #f1f1f1;
 }
 
 .placeholder {
@@ -24,8 +22,21 @@
     align-items: center;
     justify-content: center;
     height: 200px;
-    background-color: #e9ecef;
     color: #6c757d;
     font-size: 1.25rem;
     text-align: center;
+}
+
+/* glass.css */
+
+/* Glass Effect Styles */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: subtle border */
+    border-radius: 10px; /* Optional: smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+    overflow: hidden;
+    position: relative;
 }
