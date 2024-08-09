@@ -34,7 +34,33 @@
     to { opacity: 1; }
 }
 
+/* Apply glass effect to image border */
+/* Image Styles */
+.card-img-top {
+    width: calc(100% - 20px); /* Adjust width to be slightly smaller than its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the area */
+    margin: 0 auto; /* Center the image */
+    border-radius: 8px; /* Match border-radius if needed */
+    display: block; /* Ensure it behaves as a block element */
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Glass effect border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+}
+
+/* Glass Effect Card */
+.card.glass-effect {
+    background: rgba(255, 255, 255, 0.1); /* Glass effect background */
+    border-radius: 8px; /* Match border-radius for consistency */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Glass effect border */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+}
+
+
+/* Ensure the card itself has the glass effect */
 .card {
+    background: rgba(255, 255, 255, 0.2); /* White background with transparency */
+    backdrop-filter: blur(10px); /* Apply blur to give the glass effect */
     border: none;
     border-radius: 8px;
     overflow: hidden;
@@ -48,27 +74,29 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.card-img-top {
-    width: 100%; /* Make the image full width of its container */
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
-    object-fit: cover; /* Cover the area of the container while maintaining aspect ratio */
+
+.card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
 }
 
-
-.card-body {
-    padding: 1.5rem;
+.card .card-text {
+    font-size: 1rem;
+    color: #34495e;
 }
 
-.card-title {
-    margin-bottom: 1rem;
-    color: #007bff;
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .card-img-top {
-        height: 150px;
-    }
+/* Glass effect for card */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
+

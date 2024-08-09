@@ -1,43 +1,20 @@
-/* Contact Page Specific Styles */
-body {
-    background: #f4f7f6; /* Elegant background color */
-}
+/* contact.css */
 
-/* .hero {
-    background: url('assets/contact-hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100px;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 2rem;
+/* Glass Effect Class */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: subtle border */
+    border-radius: 10px; /* Optional: smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
     overflow: hidden;
+    position: relative;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
+/* General Body Style */
 
-.hero h1 {
-    font-size: 2.5rem;
-    z-index: 1;
-    margin: 0;
-    animation: fadeIn 2s ease-in-out;
-}
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-} */
 .contact-section {
     padding: 3rem 0;
 }
@@ -59,18 +36,6 @@ body {
 
 .contact-section form .btn-primary:hover {
     background-color: #0056b3;
-}
-
-.card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
