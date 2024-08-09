@@ -53,31 +53,46 @@ body {
 }
 
 /* Navbar Link Underline Effect */
+/* Remove underline effect */
 .navbar-nav .nav-link::after {
-    content: '';
-    display: block;
-    height: 2px;
-    background: #b3e0ff; /* Light blue underline */
-    transition: transform 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: bottom right;
+    content: none;
 }
 
-.navbar-nav .nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+/* Apply border, border-radius, and elevation effect to the active tab */
+.navbar-nav .nav-item .nav-link.active {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    border-bottom: 3px solid #b3e0ff; /* Adds a border to the bottom */
+    border-radius: 4px; /* Adds border radius */
+    background: transparent; /* No background to avoid additional effects */
+    padding-bottom: 5px; /* Adds space below the text */
+    margin-top: 5px; /* Adds space above the active tab to emphasize elevation */
+    transition: transform 0.2s ease-in-out, border-bottom 0.3s ease, border-radius 0.3s ease;
+    /* Elevate the text from its base */
+    transform: translateY(-6px);
 }
+
+/* Ensure non-active tabs are at base level */
+.navbar-nav .nav-item .nav-link {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* No elevation for non-active tabs */
+.navbar-nav .nav-item .nav-link span {
+    display: inline-block;
+    transform: none; /* Keeps non-active tabs at base level */
+}
+
+
 
 /* Footer */
 .footer {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem 0;
+    background-color: #2c3e50;
+    color: #ffffff;
     text-align: center;
-}
-
-.footer p {
-    margin: 0;
+    padding: 10px 0;
+    margin-top: 2rem;
 }
 
 /* PDF Embed Section */
