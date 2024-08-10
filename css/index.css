@@ -68,7 +68,7 @@ body {
     display: inline-block;
     width: 3px;
     background-color: #ffffff00;
-    /* margin-left: 2px; */
+    font-family: 'Lato', sans-serif;
     animation: blink 0.7s infinite;
     vertical-align: middle;
 }
