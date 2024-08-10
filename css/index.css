@@ -1,4 +1,12 @@
 /* General Body and Font Settings */
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #8e2de2, #d1c4e9);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
 /* Hero Section Styles */
 #hero {
@@ -8,15 +16,70 @@
     padding: 5rem 0;
 }
 
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+#hero .hero-text {
+    display: inline-block;
+    animation: fadeInUp 1s ease-out;
 }
 
-#hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+#hero .small-text {
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker', cursive; /* Handwritten style for "Hi There," */
 }
+
+#hero .large-text {
+    font-size: 4rem; /* Size for "Welcome!" */
+    font-family: 'Pacifico', cursive; /* Handwritten style for "Welcome!" */
+    margin-left: 0.5rem; /* Adds a small gap between the two texts */
+    display: inline-block;
+}
+
+#hero .sub-text {
+    font-size: 4rem; /* Same size as "Welcome!" */
+    font-family: 'Pacifico', cursive; /* Same handwritten style */
+    color: #fff; /* Ensure the text color contrasts well with the background */
+    animation: fadeInUp 1.5s ease-out; /* Keeps the existing fade-in-up animation */
+}
+
+
+
+.hero-text {
+    margin-bottom: 20px;
+}
+
+.small-text {
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.large-text {
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+    margin-left: 0.5rem;
+}
+
+.sub-text {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ffffff00;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+    vertical-align: middle;
+}
+
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 
 #hero .btn-light {
     background: #fff;
@@ -25,15 +88,16 @@
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
     font-size: 1rem;
+    font-family: 'Lato', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #hero .btn-light:hover {
     background: #f1f1f1;
     color: #2980b9;
+    transform: scale(1.05);
 }
 
-/* About Section Styles */
 /* About Section Styles with Glass Effect */
 #about {
     padding: 5rem 0;
@@ -47,13 +111,13 @@
     backdrop-filter: blur(10px); /* Blurs the background behind the element */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     color: #fff; /* Adjust text color for better contrast */
+    animation: fadeInUp 2s ease-out;
 }
 
-/* Ensure that the text inside the container is readable */
 #about h2, #about p {
     color: #fff; /* White color for text to stand out against the glass effect */
+    font-family: 'Lato', sans-serif;
 }
-
 
 .profile-img-container {
     position: relative;
@@ -62,9 +126,10 @@
     height: 250px; /* Adjust size as needed */
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     background: transparent;
     border: 5px solid rgba(255, 255, 255, 0.5);
+    animation: fadeIn 2s ease-out;
 }
 
 .profile-img {
@@ -72,8 +137,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-
 
 /* Contact Section Styles with Glass Effect */
 #contact {
@@ -88,14 +151,13 @@
     backdrop-filter: blur(10px); /* Blurs the background behind the element */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     color: #fff; /* Adjust text color for better contrast */
+    animation: fadeInUp 2s ease-out;
 }
 
-/* Ensure that the text inside the container is readable */
 #contact h2, #contact p {
     color: #fff; /* White color for text to stand out against the glass effect */
+    font-family: 'Lato', sans-serif;
 }
-
-
 
 /* Fullscreen Modal Styles */
 .modal-dialog.modal-fullscreen {
@@ -137,6 +199,7 @@
     font-size: 1.25rem; /* Adjust font size */
     line-height: 1.2; /* Adjust line height if needed */
     margin: 0; /* Remove default margin */
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Adjust close button */
@@ -150,12 +213,61 @@
     opacity: 1;
 }
 
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dropIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dashIn {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+    }
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #hero h1 {
-        font-size: 2rem;
+    #hero .large-text {
+        font-size: 3rem;
+    }
+
+    #hero .sub-text {
+        font-size: 3rem; /* Adjust size for smaller screens if needed */
+    }
+
+    #hero .small-text {
+        font-size: 1rem;
     }
 
     #hero p {

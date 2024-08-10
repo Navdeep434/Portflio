@@ -1,8 +1,17 @@
-/* Apply gradient background to the entire page */
+/* Importing a custom Google Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap'); */
+
+/* General Body and Font Settings */
+
 body {
-    background: linear-gradient(180deg, #8e2de2, #d1c4e9);
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #8e2de2, #d1c4e9);
     background-size: cover;
     background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 /* Navigation Bar */
