@@ -68,7 +68,7 @@ body {
     display: inline-block;
     width: 3px;
     background-color: #ffffff00;
-    margin-left: 2px;
+    /* margin-left: 2px; */
     animation: blink 0.7s infinite;
     vertical-align: middle;
 }
