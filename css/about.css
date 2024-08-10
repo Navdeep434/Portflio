@@ -47,44 +47,6 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
 }
 
-/* Glass Effect Card */
-.card.glass-effect {
-    background: rgba(255, 255, 255, 0.1); /* Glass effect background */
-    border-radius: 8px; /* Match border-radius for consistency */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Glass effect border */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
-}
-
-
-/* Ensure the card itself has the glass effect */
-.card {
-    background: rgba(255, 255, 255, 0.2); /* White background with transparency */
-    backdrop-filter: blur(10px); /* Apply blur to give the glass effect */
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-
-.card .card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-.card .card-text {
-    font-size: 1rem;
-    color: #34495e;
-}
 
 
 

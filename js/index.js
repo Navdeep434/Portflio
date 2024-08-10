@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const text = "Explore my journey in\nSoftware Engineering...";
+    const text = "Explore my journey in\nSoftware Engineering ...";
     const typedTextSpan = document.querySelector("#typed-text");
     const cursorSpan = document.querySelector(".cursor");
 

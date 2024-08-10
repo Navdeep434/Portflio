@@ -37,8 +37,7 @@
     width: 3px;
     background-color: #ffffff00;
     font-family: 'Lato', sans-serif;
-    /* margin-left: 2px; */
-    animation: blink 0.7s infinite;
+    animation: blink 1.0s infinite;
     vertical-align: middle;
 }
 
@@ -67,24 +66,20 @@
 }
 
 /* About Section Styles with Glass Effect */
-#about {
-    padding: 5rem 0;
-}
 
-#about .text-container {
+.text-container {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     backdrop-filter: blur(10px); /* Blurs the background behind the element */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
-    color: #fff; /* Adjust text color for better contrast */
+    color: #34495e;
+    /* Adjust text color for better contrast */
     animation: fadeInUp 2s ease-out;
 }
 
-#about h2, #about p {
-    color: #fff; /* White color for text to stand out against the glass effect */
-}
+
 
 .profile-img-container {
     position: relative;
@@ -105,25 +100,6 @@
     object-fit: cover;
 }
 
-/* Contact Section Styles with Glass Effect */
-#contact {
-    padding: 5rem 0;
-}
-
-#contact .text-container {
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blurs the background behind the element */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    color: #fff; /* Adjust text color for better contrast */
-    animation: fadeInUp 2s ease-out;
-}
-
-#contact h2, #contact p {
-    color: #fff; /* White color for text to stand out against the glass effect */
-}
 
 /* Fullscreen Modal Styles */
 .modal-dialog.modal-fullscreen {
@@ -170,12 +146,12 @@
 
 /* Adjust close button */
 .close {
-    color: #fff;
+    color: #ff0000;
     opacity: 0.75;
 }
 
 .close:hover {
-    color: #fff;
+    color: #34495e;
     opacity: 1;
 }
 
