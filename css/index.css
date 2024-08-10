@@ -28,14 +28,14 @@ body {
 
 #hero .large-text {
     font-size: 4rem; /* Size for "Welcome!" */
-    font-family: 'Pacifico', cursive; /* Handwritten style for "Welcome!" */
+    font-family: 'Permanent Marker', cursive; /* Handwritten style for "Welcome!" */
     margin-left: 0.5rem; /* Adds a small gap between the two texts */
     display: inline-block;
 }
 
 #hero .sub-text {
     font-size: 4rem; /* Same size as "Welcome!" */
-    font-family: 'Pacifico', cursive; /* Same handwritten style */
+    font-family: 'Permanent Marker', cursive; /* Same handwritten style */
     color: #fff; /* Ensure the text color contrasts well with the background */
     animation: fadeInUp 1.5s ease-out; /* Keeps the existing fade-in-up animation */
 }
@@ -53,13 +53,13 @@ body {
 
 .large-text {
     font-size: 4rem;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Permanent Marker', cursive;
     margin-left: 0.5rem;
 }
 
 .sub-text {
     font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Permanent Marker', cursive;
     line-height: 1.2;
     margin: 0;
 }
@@ -88,7 +88,6 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -116,7 +115,6 @@ body {
 
 #about h2, #about p {
     color: #fff; /* White color for text to stand out against the glass effect */
-    font-family: 'Lato', sans-serif;
 }
 
 .profile-img-container {
@@ -156,7 +154,6 @@ body {
 
 #contact h2, #contact p {
     color: #fff; /* White color for text to stand out against the glass effect */
-    font-family: 'Lato', sans-serif;
 }
 
 /* Fullscreen Modal Styles */
