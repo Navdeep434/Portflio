@@ -4,8 +4,8 @@
 /* General Body and Font Settings */
 
 body {
-    /* font-family: 'Lato', cursive; */
-    font-family: cursive;
+    font-family: 'Lato', cursive;
+    /* font-family: cursive; */
     background: linear-gradient(135deg, #8e2de2, #d1c4e9);
     background-size: cover;
     background-attachment: fixed;
