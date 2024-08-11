@@ -1,11 +1,9 @@
 /* Importing a custom Google Font */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /* General Body and Font Settings */
-
 body {
-    font-family: 'Permanent Marker'; /* Handwritten style for "Hi There," */
-    /* font-family: cursive; */
+    font-family: 'Lato', cursive; /* Handwritten style for "Hi There," */
     background: linear-gradient(135deg, #8e2de2, #d1c4e9);
     background-size: cover;
     background-attachment: fixed;
