@@ -14,7 +14,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
         <a class="navbar-brand" href="#">Navdeep Raushan</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,9 +41,11 @@
     
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>About Me</h1>
-    </section>
+    <div class="row hero d-flex justify-content-center position-relative text-center">
+        <div class="col align-self-center">
+            <h1 class="h1">About Me</h1>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="py-5">
@@ -51,7 +53,73 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <img src="assets/profile.jpg" class="card-img-top mb-4" alt="Navdeep Raushan">
-                    <div class="card glass-effect ">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card glass-effect">
+                                <div class="card-body">
+                                    <h5 class="card-title">Personal Details</h5>
+                                    <p><strong>Name:</strong> Navdeep Raushan</p>
+                                    <p><strong>Date of Birth:</strong> May 28, 1998</p>
+                                    <p><strong>Location:</strong> Bangalore, India</p>
+                                    <p><strong>Mother's Name:</strong> Mrs. Geeta Kumari</p>
+                                    <p><strong>Father's Name:</strong> Mr. Dhirendra Prasad Singh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card glass-effect">
+                                <div class="card-body">
+                                    <h5 class="card-title">Skills and Expertise</h5>
+                                    <div class="skill-set">
+                                        <div class="skill">
+                                            <h6>PHP</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <h6>Laravel</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <h6>HTML</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <h6>CSS</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <h6>JavaScript</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 80%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <h6>Bootstrap</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <h6>React</h6>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="card glass-effect">
                         <div class="card-body">
                             <h5 class="card-title">Personal Details</h5>
                             <p><strong>Name:</strong> Navdeep Raushan</p>
@@ -60,53 +128,191 @@
                             <p><strong>Mother's Name:</strong> Mrs. Geeta Kumari</p>
                             <p><strong>Father's Name:</strong> Mr. Dhirendra Prasad Singh</p>
                         </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Skills and Expertise</h5>
-                                <p class="card-text">My core skills include HTML, CSS, JavaScript, Bootstrap, and various JavaScript frameworks such as React and Angular. I am also proficient in back-end technologies like Node.js and PHP. I hold certifications in both front-end and back-end development, which have helped me stay updated with the latest industry trends.</p>
-                            </div>
-                    </div>
-
+                        <div class="card-body">
+                            <h5 class="card-title">Skills and Expertise</h5>
+                            <p class="card-text">My core skills include HTML, CSS, JavaScript, Bootstrap, and various JavaScript frameworks such as React and Angular. I am also proficient in back-end technologies like Node.js and PHP. I hold certifications in both front-end and back-end development, which have helped me stay updated with the latest industry trends.</p>
+                        </div>
+                    </div> -->
                 </div>
 
                 <div class="col-lg-8 col-md-6 mb-4">
-                    <div class="card glass-effect">
+                    <!-- Custom Accordion -->
+                    <div class="accordion-container">
+                        <!-- My Journey Card -->
+                        <div class="card glass-effect mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title mb-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    My Journey
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show">
+                                <div class="card-body">
+                                    <p class="card-text">I am a dedicated PHP Laravel Developer with hands-on experience in building and maintaining web applications. My background includes working on a challenging Customer Relationship Management (CRM) tool, where I tackled complex problems such as integrating Spatie for role and permission management. Despite being a fresher, I successfully navigated these challenges and found effective solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Educational Background Card -->
+                        <!-- <div class="card glass-effect mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title mb-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Educational Background
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse">
+                                <div class="card-body">
+                                    <p class="card-text">Graduated with a Bachelor's degree in Mechanical Engineering from Techno Engineering College Banipur. Transitioned to the software industry due to a strong passion for coding and software development, leading to a successful career in [Your Current Field or Industry]. This shift reflects my adaptability, drive for learning, and commitment to following my professional passions. I furthered my skills by relocating to Bangalore and joining QSpiders institute to receive specialized training for the IT industry.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="card glass-effect mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title mb-0"  type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    EDUCATION
+                                </h2>
+                            </div>
+                            <div class="card-body collapse" id="collapseTwo">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="d-flex justify-content-between">
+                                                <h3>B.Tech, Techno engineering College Banipur</h3>
+                                                <span>Kolkata, West Bengal</span>
+                                            </div>
+                                            <p>Aug 2016 — Jul 2020</p>
+                                            <p>Stream: Mechanical engineering</p>
+                                            <p>DGPA: 7.65</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="d-flex justify-content-between">
+                                                <h3>Intermediate, Patna Central School</h3>
+                                                <span>Patna, Bihar</span>
+                                            </div>
+                                            <p>2016</p>
+                                            <p>Stream: PCM</p>
+                                            <p>Percentage: 68%</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="d-flex justify-content-between">
+                                                <h3>Matriculation, Patna Central School</h3>
+                                                <span>Patna, Bihar</span>
+                                            </div>
+                                            <p>2014</p>
+                                            <p>Percentage: 87.4%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Professional Experience Card -->
+                        <div class="card glass-effect mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title mb-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Professional Experience
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse">
+                                <div class="card-body">
+                                    <p class="card-text">After graduation, I began my career as a junior web developer at ABC Company. Over the years, I have worked on numerous projects, from small business websites to large-scale web applications. Currently, I am working as a full-stack developer at DEF Inc., where I lead a team of developers and manage complex projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Notable Projects Card -->
+                        <div class="card glass-effect mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title mb-0" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Notable Projects
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse">
+                                <div class="card-body">
+                                    <p class="card-text">Some of my notable projects include a dynamic e-commerce platform for GHI Ltd., a responsive website for a renowned photographer, and a real-time chat application for a tech startup. These projects have honed my skills and expanded my expertise in various domains.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Professional Growth Card -->
+                        <div class="card glass-effect mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title mb-0" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Professional Growth
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse">
+                                <div class="card-body">
+                                    <p class="card-text">Throughout my career, I have continuously sought opportunities to learn and grow. I have faced numerous challenges, such as tight deadlines and complex project requirements, but I have always approached them with a solution-oriented mindset. These experiences have shaped me into a resilient and adaptable professional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <!-- Personal Traits and Values Card -->
+               <div class="col-md-6">
+                    <div class="card glass-effect mb-4">
+                        <div class="card-header">
+                            <h2 class="card-title " type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Personal Traits and Values
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse">
+                            <div class="card-body">
+                                <p class="card-text">I am known for my attention to detail, creativity, and commitment to delivering high-quality work. I value integrity, collaboration, and continuous improvement, which guide my approach to both personal and professional endeavors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Information Card -->
+               <div class="col-md-6">
+                   <div class="card glass-effect mb-4">
+                        <div class="card-header">
+                            <h5 class="card-title" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Other Information</h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse">
+                            <div class="card-body">
+                                <div class="card-body">
+                                    <p class="card-text">Aside from my professional work, I am actively involved in volunteering activities and enjoy giving back to the community. I also have a keen interest in Riding Bikes, Driving Cars, and Playing online Games in my free time.</p>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+               <!-- Personal Interests Card -->
+               <div class="col-md-6">
+                <div class="card glass-effect mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Personal Interests</h5>
+                    </div>
+                    <div id="collapseEight" class="collapse">
                         <div class="card-body">
-                            <h2 class="card-title text-center">My Journey</h2>
-                            <p class="card-text">I am a dedicated PHP Laravel Developer with hands-on experience in building and maintaining web applications. My background includes working on a challenging Customer Relationship Management (CRM) tool, where I tackled complex problems such as integrating Spatie for role and permission management. Despite being a fresher, I successfully navigated these challenges and found effective solutions.</p>
-                            <h5 class="card-title">Educational Background</h5>
-                            <p class="card-text">Graduated with a Bachelor's degree in Mechanical Engineering from Techno Engineering College Banipur. Transitioned to the software industry due to a strong passion for coding and software development, leading to a successful career in [Your Current Field or Industry]. This shift reflects my adaptability, drive for learning, and commitment to following my professional passions. I furthered my skills by relocating to Bangalore and joining QSpiders institute to receive specialized training for the IT industry.</p>
-                            <h5 class="card-title">Professional Experience</h5>
-                            <p class="card-text">After graduation, I began my career as a junior web developer at ABC Company. Over the years, I have worked on numerous projects, from small business websites to large-scale web applications. Currently, I am working as a full-stack developer at DEF Inc., where I lead a team of developers and manage complex projects.</p>
-                            <h5 class="card-title">Notable Projects</h5>
-                            <p class="card-text">Some of my notable projects include a dynamic e-commerce platform for GHI Ltd., a responsive website for a renowned photographer, and a real-time chat application for a tech startup. These projects have honed my skills and expanded my expertise in various domains.</p>
-                            <h5 class="card-title">Professional Growth</h5>
-                            <p class="card-text">Throughout my career, I have continuously sought opportunities to learn and grow. I have faced numerous challenges, such as tight deadlines and complex project requirements, but I have always approached them with a solution-oriented mindset. These experiences have shaped me into a resilient and adaptable professional.</p>
-                            <h5 class="card-title">Personal Traits and Values</h5>
-                            <p class="card-text">I believe in hard work, continuous learning, and staying committed to excellence. My work ethic is built on a foundation of integrity, reliability, and a passion for delivering high-quality results.</p>
-                            <h5 class="card-title">Future Goals and Aspirations</h5>
-                            <p class="card-text">Looking ahead, I aim to further enhance my skills in emerging technologies like AI and machine learning. My goal is to lead innovative projects that make a positive impact on businesses and society. I am also passionate about mentoring aspiring developers and sharing my knowledge through workshops and online content.</p>
+                            <div class="card-body">
+                                <p class="card-text">Outside of work, I enjoy photography, hiking, and exploring new technologies. These hobbies not only help me relax but also inspire my creative work.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Other Information Card -->
-            <div class="card glass-effect mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Other Information</h5>
-                    <p class="card-text">Aside from my professional work, I am actively involved in volunteering activities and enjoy giving back to the community. I also have a keen interest in Riding Bikes, Driving Cars, and Playing online Games in my free time.</p>
-                </div>
-            </div>
-
-            <!-- Personal Interests Card -->
-            <div class="card glass-effect mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Personal Interests</h5>
-                    <p class="card-text">Outside of work, I enjoy photography, hiking, and exploring new technologies. These hobbies not only help me relax but also inspire my creative work.</p>
-                </div>
             </div>
         </div>
+        
+        
+
+       
+    </div>
     </section>
+
+            
 
     <!-- Footer -->
     <footer class="footer">
@@ -117,8 +323,11 @@
 
     <!-- Bootstrap JS and dependencies -->
     <script src="js/common.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/about.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
