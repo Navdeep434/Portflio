@@ -30,7 +30,6 @@
     to { opacity: 1; }
 }
 
-/* Apply glass effect to image border */
 /* Image Styles */
 .card-img-top {
     width: calc(100% - 20px); /* Adjust width to be slightly smaller than its container */
